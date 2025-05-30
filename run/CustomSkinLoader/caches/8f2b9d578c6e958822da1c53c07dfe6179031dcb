@@ -1,0 +1,9 @@
+{
+  "id" : "88e89e6a13c74026affb5bd838de825d",
+  "name" : "player15",
+  "properties" : [ {
+    "name" : "textures",
+    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTc0ODU5MDE2NzYzOCwKICAicHJvZmlsZUlkIiA6ICI4OGU4OWU2YTEzYzc0MDI2YWZmYjViZDgzOGRlODI1ZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJwbGF5ZXIxNSIsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS84NGYxMWIyMTRhZmFhZTFiMmY1MzYwNzVjYWY5NWFmYzc5NzFkNzM3MzY5Nzg4M2YxYjdlNWIzMzQyNzU0ODNkIgogICAgfQogIH0KfQ=="
+  } ],
+  "profileActions" : [ ]
+}

@@ -1,0 +1,19 @@
+/effect give Player565 minecraft:saturation infinite 255
+/give Player784 minecraft:arrow
+/tp ~ ~100 ~
+/gamerule keepInventory true
+/summon minecraft:arrow ~ ~50 ~
+/effect give Player565 minecraft:saturation infinite 255
+/effect give @s minecraft:saturation infinite 255
+/difficulty peaceful
+/time set day
+/tp @e[type=minecraft:chicken,distance=10] ~ ~10 ~
+/tp @e[type=minecraft:chicken,distance=20] ~ ~10 ~
+/tp @e[type=minecraft:chicken] ~ ~10 ~
+/tp @e[type=minecraft:chicken] ~ ~20 ~
+/weather clear
+/tp @e[type=minecraft:chicken] ~ ~20 ~
+/weather clear
+/tp @e[type=minecraft:chicken] ~ ~20 ~
+/difficulty peaceful
+/time set day

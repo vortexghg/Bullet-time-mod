@@ -1,0 +1,14 @@
+{
+  "bullet_time_enter": {
+    "sounds": [
+      "bullettimemod:bullet_time_enter"
+    ],
+    "subtitle": "sounds.bullettimemod.bullet_time_enter"
+  },
+  "bullet_time_leave": {
+    "sounds": [
+      "bullettimemod:bullet_time_leave"
+    ],
+    "subtitle": "sounds.bullettimemod.bullet_time_leave"
+  }
+}

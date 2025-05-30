@@ -1,0 +1,99 @@
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: CustomSkinLoader 14.23
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: DataDir: F:\project-bullet-time\Bullet-time-mod\run\CustomSkinLoader
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Operating System: Windows 11 (amd64) version 10.0
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Java Version: 21.0.5, Eclipse Adoptium
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Minecraft: 1.21.4
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Config File: F:\project-bullet-time\Bullet-time-mod\run\CustomSkinLoader\CustomSkinLoader.json
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Try to load config.
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Successfully load config.
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MojangAPI
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: Legacy
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSkinAPI
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSKinAPIPlus
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: UniSkinAPI
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: ElyByAPI
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: GlitchlessAPI
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MinecraftCapesAPI
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: WynntilsAPI
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: Successfully update config.
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: version : 14.23
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: buildNumber : 32
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: loadlist : [{ "name": "Mojang", "type": "MojangAPI", "apiRoot": "https://api.mojang.com/", "sessionRoot": "https://sessionserver.mojang.com/" }, { "name": "LittleSkin", "type": "CustomSkinAPI", "root": "https://littleskin.cn/csl/" }, { "name": "BlessingSkin", "type": "CustomSkinAPI", "root": "https://skin.prinzeugen.net/" }, { "name": "ElyBy", "type": "ElyByAPI", "root": "http://skinsystem.ely.by/textures/" }, { "name": "SkinMe", "type": "UniSkinAPI", "root": "http://www.skinme.cc/uniskin/" }, { "name": "TLauncher", "type": "ElyByAPI", "root": "https://auth.tlauncher.org/skin/profile/texture/login/" }, { "name": "GlitchlessGames", "type": "GlitchlessAPI", "root": "https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=" }, { "name": "LocalSkin", "type": "Legacy", "checkPNG": "false", "skin": "LocalSkin/skins/{USERNAME}.png", "model": "auto", "cape": "LocalSkin/capes/{USERNAME}.png", "elytra": "LocalSkin/elytras/{USERNAME}.png" }, { "name": "MinecraftCapes", "type": "MinecraftCapesAPI", "root": "https://api.minecraftcapes.net/profile/" }, { "name": "OptiFine", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://optifine.net/capes/{USERNAME}.png" }, { "name": "Wynntils", "type": "WynntilsAPI", "root": "https://athena.wynntils.com/user/getInfo" }, { "name": "CloakPlus", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "http://161.35.130.99/capes/{USERNAME}.png" }, { "name": "Cosmetica", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://api.cosmetica.cc/get/cloak?username={USERNAME}&uuid={STANDARD_UUID}&nothirdparty" }]
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: enableDynamicSkull : true
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: enableTransparentSkin : true
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: forceLoadAllTextures : true
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: enableCape : true
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: threadPoolSize : 8
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: enableLogStdOut : false
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: cacheExpiry : 30
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: forceUpdateSkull : false
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: enableLocalProfileCache : false
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: enableCacheAutoClean : false
+[2025-05-30 10:38:46] [Render thread/INFO] [CustomSkinLoader Core]: forceDisableCache : false
+[2025-05-30 10:38:46] [Player297/INFO] [CustomSkinLoader Core]: Loading Player297's profile.
+[2025-05-30 10:38:46] [Player297/INFO] [CustomSkinLoader Core]: 1/13 Try to load profile from 'Mojang'.
+[2025-05-30 10:38:46] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.mojang.com/profiles/minecraft'.
+[2025-05-30 10:38:46] [Player297/INFO] [CustomSkinLoader Core]: Payload: ["Player297"]
+[2025-05-30 10:38:46] [Player297/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 3)
+[2025-05-30 10:38:46] [Player297/DEBUG] [CustomSkinLoader Core]: Content: [ ]
+[2025-05-30 10:38:46] [Player297/INFO] [CustomSkinLoader Core]: Profile not found.(Player297's profile not found.)
+[2025-05-30 10:38:46] [Player297/INFO] [CustomSkinLoader Core]: 2/13 Try to load profile from 'LittleSkin'.
+[2025-05-30 10:38:46] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'https://littleskin.cn/csl/Player297.json'.
+[2025-05-30 10:38:48] [Player297/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: -1)
+[2025-05-30 10:38:48] [Player297/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 2 , Path: 'F:\project-bullet-time\Bullet-time-mod\run\CustomSkinLoader\caches\37a87586d3b22c0aea1fa1532f6d733755433fcd' , Expire: 1748594421)
+[2025-05-30 10:38:48] [Player297/DEBUG] [CustomSkinLoader Core]: Content: {}
+[2025-05-30 10:38:48] [Player297/INFO] [CustomSkinLoader Core]: Both skin and cape not found.
+[2025-05-30 10:38:48] [Player297/INFO] [CustomSkinLoader Core]: 3/13 Try to load profile from 'BlessingSkin'.
+[2025-05-30 10:38:48] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'https://skin.prinzeugen.net/Player297.json'.
+[2025-05-30 10:38:48] [Player297/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2025-05-30 10:38:48] [Player297/INFO] [CustomSkinLoader Core]: Profile not found.
+[2025-05-30 10:38:48] [Player297/INFO] [CustomSkinLoader Core]: 4/13 Try to load profile from 'ElyBy'.
+[2025-05-30 10:38:48] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'http://skinsystem.ely.by/textures/Player297'.
+[2025-05-30 10:38:48] [Player297/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 204 , Content Length: -1)
+[2025-05-30 10:38:48] [Player297/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 0 , Path: 'F:\project-bullet-time\Bullet-time-mod\run\CustomSkinLoader\caches\49096ed7ca2292b8c9ad5a5026af434cbe28bacc' , Expire: 1748597929)
+[2025-05-30 10:38:48] [Player297/DEBUG] [CustomSkinLoader Core]: Content: 
+[2025-05-30 10:38:48] [Player297/INFO] [CustomSkinLoader Core]: Profile not found.
+[2025-05-30 10:38:48] [Player297/INFO] [CustomSkinLoader Core]: 5/13 Try to load profile from 'SkinMe'.
+[2025-05-30 10:38:48] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'http://www.skinme.cc/uniskin/Player297.json'.
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Failed to request http://www.skinme.cc/uniskin/Player297.json (Exception: java.net.UnknownHostException: www.skinme.cc)
+[2025-05-30 10:38:49] [Player297/INFO] [CustomSkinLoader Core]: Profile not found.
+[2025-05-30 10:38:49] [Player297/INFO] [CustomSkinLoader Core]: 6/13 Try to load profile from 'TLauncher'.
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'https://auth.tlauncher.org/skin/profile/texture/login/Player297'.
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: -1)
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Saved to cache (Length: 86 , Path: 'F:\project-bullet-time\Bullet-time-mod\run\CustomSkinLoader\caches\01394e7397250737bbbbc51d369b81b828578323' , Expire: 1748594420)
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Content: {"SKIN":{"url":"http://auth.tlauncher.org/skin/fileservice/skins/skin_player297.png"}}
+[2025-05-30 10:38:49] [Player297/INFO] [CustomSkinLoader Core]: 7/13 Try to load profile from 'GlitchlessGames'.
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=Player297'.
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2025-05-30 10:38:49] [Player297/INFO] [CustomSkinLoader Core]: Profile not found.
+[2025-05-30 10:38:49] [Player297/INFO] [CustomSkinLoader Core]: 8/13 Try to load profile from 'LocalSkin'.
+[2025-05-30 10:38:49] [Player297/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2025-05-30 10:38:49] [Player297/INFO] [CustomSkinLoader Core]: 9/13 Try to load profile from 'MinecraftCapes'.
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.mojang.com/profiles/minecraft'.
+[2025-05-30 10:38:49] [Player297/INFO] [CustomSkinLoader Core]: Payload: ["Player297"]
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 3)
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Content: [ ]
+[2025-05-30 10:38:49] [Player297/INFO] [CustomSkinLoader Core]: Profile url not found.
+[2025-05-30 10:38:49] [Player297/INFO] [CustomSkinLoader Core]: 10/13 Try to load profile from 'OptiFine'.
+[2025-05-30 10:38:49] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'https://optifine.net/capes/Player297.png'.
+[2025-05-30 10:38:50] [Player297/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2025-05-30 10:38:50] [Player297/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2025-05-30 10:38:50] [Player297/INFO] [CustomSkinLoader Core]: 11/13 Try to load profile from 'Wynntils'.
+[2025-05-30 10:38:50] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.mojang.com/profiles/minecraft'.
+[2025-05-30 10:38:50] [Player297/INFO] [CustomSkinLoader Core]: Payload: ["Player297"]
+[2025-05-30 10:38:50] [Player297/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 3)
+[2025-05-30 10:38:50] [Player297/DEBUG] [CustomSkinLoader Core]: Content: [ ]
+[2025-05-30 10:38:50] [Player297/INFO] [CustomSkinLoader Core]: Profile not found.
+[2025-05-30 10:38:50] [Player297/INFO] [CustomSkinLoader Core]: 12/13 Try to load profile from 'CloakPlus'.
+[2025-05-30 10:38:50] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'http://161.35.130.99/capes/Player297.png'.
+[2025-05-30 10:38:51] [Player297/DEBUG] [CustomSkinLoader Core]: Failed to request (Response Code: 404)
+[2025-05-30 10:38:51] [Player297/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2025-05-30 10:38:51] [Player297/INFO] [CustomSkinLoader Core]: 13/13 Try to load profile from 'Cosmetica'.
+[2025-05-30 10:38:51] [Player297/DEBUG] [CustomSkinLoader Core]: Try to request 'https://api.mojang.com/profiles/minecraft'.
+[2025-05-30 10:38:51] [Player297/INFO] [CustomSkinLoader Core]: Payload: ["Player297"]
+[2025-05-30 10:38:51] [Player297/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 200 , Content Length: 3)
+[2025-05-30 10:38:51] [Player297/DEBUG] [CustomSkinLoader Core]: Content: [ ]
+[2025-05-30 10:38:51] [Player297/INFO] [CustomSkinLoader Core]: No texture could be found.
+[2025-05-30 10:38:51] [Player297/INFO] [CustomSkinLoader Core]: Player297's profile loaded.
+[2025-05-30 10:38:51] [Player297/INFO] [CustomSkinLoader Core]: (SkinUrl: http://auth.tlauncher.org/skin/fileservice/skins/skin_player297.png , Model: default , CapeUrl: null  , Expiry: 1748594361)

@@ -1,0 +1,340 @@
+{
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2024-10-05 23:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-10-05 23:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2024-10-05 23:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2024-10-05 23:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2024-10-05 23:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2024-10-05 23:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2024-10-05 23:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2024-10-05 23:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2024-10-05 23:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2024-10-05 23:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:ocean": "2024-10-06 01:21:01 +0000",
+      "minecraft:frozen_peaks": "2024-10-06 01:24:05 +0000",
+      "minecraft:plains": "2024-10-05 23:17:15 +0000"
+    },
+    "done": false
+  },
+  "mariokart:on_hit": {
+    "criteria": {
+      "!bit13": "2024-10-05 23:17:29 +0000",
+      "bit3": "2024-10-05 23:17:29 +0000",
+      "!bit14": "2024-10-05 23:17:29 +0000",
+      "bit4": "2024-10-05 23:17:29 +0000",
+      "!bit11": "2024-10-05 23:17:29 +0000",
+      "!bit12": "2024-10-05 23:17:29 +0000",
+      "bit2": "2024-10-05 23:17:29 +0000",
+      "not_target": "2024-10-05 23:17:29 +0000",
+      "!bit20": "2024-10-05 23:17:29 +0000",
+      "!bit10": "2024-10-05 23:17:29 +0000",
+      "bit0": "2024-10-05 23:17:29 +0000",
+      "!bit21": "2024-10-05 23:17:29 +0000",
+      "!bit19": "2024-10-05 23:17:29 +0000",
+      "!bit9": "2024-10-05 23:17:29 +0000",
+      "!bit8": "2024-10-05 23:17:29 +0000",
+      "!bit7": "2024-10-05 23:17:29 +0000",
+      "!bit17": "2024-10-05 23:17:29 +0000",
+      "!bit6": "2024-10-05 23:17:29 +0000",
+      "!bit18": "2024-10-05 23:17:29 +0000",
+      "!bit15": "2024-10-05 23:17:29 +0000",
+      "!bit5": "2024-10-05 23:17:29 +0000",
+      "!bit16": "2024-10-05 23:17:29 +0000",
+      "!bit1": "2024-10-05 23:17:29 +0000"
+    },
+    "done": true
+  },
+  "mariokart:player_hit_entity": {
+    "criteria": {
+      "requirement": "2024-10-05 23:17:29 +0000"
+    },
+    "done": true
+  },
+  "mariokart:right_click": {
+    "criteria": {
+      "requirement": "2024-10-05 23:19:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_blue_wool": {
+    "criteria": {
+      "has_needed_dye": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_blue_dye_from_blue_white_dye": {
+    "criteria": {
+      "has_blue_dye": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/cyan_dye": {
+    "criteria": {
+      "has_blue_dye": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_blue_carpet": {
+    "criteria": {
+      "has_needed_dye": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/purple_dye": {
+    "criteria": {
+      "has_blue_dye": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_candle": {
+    "criteria": {
+      "has_blue_dye": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_blue_dye": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_blue_red_pink": {
+    "criteria": {
+      "has_blue_dye": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "mariokart:inventory_changed": {
+    "criteria": {
+      "requirement": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_blue_bed": {
+    "criteria": {
+      "has_needed_dye": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_blue_red_white_dye": {
+    "criteria": {
+      "has_blue_dye": "2024-10-05 23:21:15 +0000"
+    },
+    "done": true
+  },
+  "mariokart:on_hurt": {
+    "criteria": {
+      "nbit7": "2024-10-05 23:23:23 +0000",
+      "nbit8": "2024-10-05 23:23:23 +0000",
+      "nbit9": "2024-10-05 23:23:23 +0000",
+      "nbit15": "2024-10-05 23:23:23 +0000",
+      "nbit3": "2024-10-06 00:30:23 +0000",
+      "nbit14": "2024-10-05 23:23:23 +0000",
+      "nbit4": "2024-10-06 00:30:23 +0000",
+      "nbit5": "2024-10-05 23:23:23 +0000",
+      "nbit13": "2024-10-05 23:23:23 +0000",
+      "nbit6": "2024-10-05 23:23:23 +0000",
+      "nbit12": "2024-10-05 23:23:23 +0000",
+      "nbit19": "2024-10-05 23:23:23 +0000",
+      "nbit18": "2024-10-05 23:23:23 +0000",
+      "nbit0": "2024-10-06 00:09:34 +0000",
+      "nbit1": "2024-10-05 23:23:23 +0000",
+      "nbit17": "2024-10-05 23:23:23 +0000",
+      "nbit2": "2024-10-05 23:31:37 +0000",
+      "nbit16": "2024-10-05 23:23:23 +0000",
+      "nbit21": "2024-10-05 23:23:23 +0000",
+      "nbit20": "2024-10-05 23:23:23 +0000",
+      "bit21": "2024-10-06 00:31:18 +0000",
+      "bit20": "2024-10-06 00:31:18 +0000",
+      "bit9": "2024-10-06 00:31:18 +0000",
+      "bit18": "2024-10-06 00:31:18 +0000",
+      "bit19": "2024-10-06 00:31:18 +0000",
+      "bit16": "2024-10-06 00:31:18 +0000",
+      "bit7": "2024-10-06 00:31:18 +0000",
+      "bit8": "2024-10-06 00:31:18 +0000",
+      "bit17": "2024-10-06 00:31:18 +0000",
+      "bit14": "2024-10-06 00:31:18 +0000",
+      "bit5": "2024-10-06 00:30:44 +0000",
+      "bit15": "2024-10-06 00:31:18 +0000",
+      "bit6": "2024-10-06 00:31:18 +0000",
+      "bit3": "2024-10-05 23:23:23 +0000",
+      "bit4": "2024-10-05 23:23:23 +0000",
+      "bit1": "2024-10-05 23:31:37 +0000",
+      "bit2": "2024-10-05 23:23:23 +0000",
+      "bit0": "2024-10-05 23:23:23 +0000",
+      "nbit11": "2024-10-05 23:23:23 +0000",
+      "nbit10": "2024-10-05 23:23:23 +0000",
+      "bit12": "2024-10-06 00:31:18 +0000",
+      "bit13": "2024-10-06 00:31:18 +0000",
+      "bit10": "2024-10-06 00:31:18 +0000",
+      "bit11": "2024-10-06 00:31:18 +0000"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/sandstone_stairs": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_slab": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_planks": {
+    "criteria": {
+      "has_logs": "2024-10-06 01:17:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks": {
+    "criteria": {
+      "has_logs": "2024-10-06 01:21:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_sandstone_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/get_wither_skull": {
+    "criteria": {
+      "wither_skull": "2024-10-06 00:31:47 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_sandstone": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2024-10-06 01:17:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/sandstone_wall_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_slab_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_campfire": {
+    "criteria": {
+      "has_soul_sand": "2024-10-06 00:31:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2024-10-06 00:30:45 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_stairs_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/sandstone_wall": {
+    "criteria": {
+      "has_sandstone": "2024-10-06 01:22:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_torch": {
+    "criteria": {
+      "has_soul_sand": "2024-10-06 00:31:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/skull_banner_pattern": {
+    "criteria": {
+      "has_wither_skeleton_skull": "2024-10-06 00:31:47 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 3700
+}
