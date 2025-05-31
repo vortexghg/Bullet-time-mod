@@ -6,6 +6,8 @@ import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
@@ -14,19 +16,25 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.attribute.EntityAttributes;
-import de.lost.vortex.bulletTimeMod.sound.ModSound;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import static de.lost.vortex.bulletTimeMod.BulletTimeMod.BULLET_TIME_ENTER_EVENT;
+import static de.lost.vortex.bulletTimeMod.sound.ModSound.BULLET_TIME_LEAVE;
+
 
 public class TickHandler {
-    // RICHTIG: SoundEvents mit Identifier.of()
-    public static final SoundEvent BULLET_TIME_ENTER = SoundEvent.of(Identifier.of("bullet_time_mod:bullet_time_enter"));
-    public static final SoundEvent BULLET_TIME_LEAVE = SoundEvent.of(Identifier.of("bullet_time_mod:bullet_time_leave"));
 
-    // Status pro Spieler speichern
+    private static SoundEvent registerSound(String id) {
+        Identifier identifier = Identifier.of(BulletTimeMod.MOD_ID, id);
+        return Registry.register(Registries.SOUND_EVENT, identifier, SoundEvent.of(identifier));
+    }
+
+
+
+        // Status pro Spieler speichern
     private static final Map<UUID, Boolean> bulletTimeActive = new HashMap<>();
     private static final Map<UUID, Integer> bulletTimeTicks = new HashMap<>();
 
@@ -54,16 +62,16 @@ public class TickHandler {
                         bulletTimeTicks.put(playerId, 0);
 
                         // Sound: Erster Teil (3s)
-                        player.playSound(BULLET_TIME_ENTER, 1.0f, 1.0f);
+                        player.playSound(BULLET_TIME_ENTER_EVENT, 10.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
-                                BULLET_TIME_ENTER,
+                                BULLET_TIME_ENTER_EVENT,
                                 SoundCategory.PLAYERS,
                                 1.0f, 1.0f
                         );
-                    }
 
+                    }
                     // Bullet Time läuft
                     if (currentlyActive) {
                         int ticks = bulletTimeTicks.getOrDefault(playerId, 0) + 1;
@@ -119,15 +127,7 @@ public class TickHandler {
                         bulletTimeTicks.remove(playerId);
 
                         // Sound: Restlicher Teil (3s)
-                        world.playSound(
-                                null,
-                                player.getX(), player.getY(), player.getZ(),
-                                BULLET_TIME_LEAVE,
-                                SoundCategory.PLAYERS,
-                                1.0f, 1.0f
-                        );
-
-                        player.playSound(BULLET_TIME_LEAVE, 1.0f, 1.0f);
+                        player.playSound(BULLET_TIME_LEAVE, 10.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),

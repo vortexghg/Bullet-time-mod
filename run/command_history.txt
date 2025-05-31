@@ -17,3 +17,20 @@
 /tp @e[type=minecraft:chicken] ~ ~20 ~
 /difficulty peaceful
 /time set day
+/playsound bullet-time-mod:bullet_time_enter master @p
+/kill @e[type=!minecraft:player]
+/playsound bullet-time-mod:bullet_time_enter master @p
+/playsound bullet-time-mod:bullet_time_enter master @p 4093.12 142.00 5645.90 1000 1 1
+/kill @e[type=!minecraft:player]
+/playsound bullet-time-mod:bullet_time_enter master @p
+/playsound bullet-time-mod:bullet_time_enter master @p 4093.12 142.00 5645.90 1000 1 1
+/playsound bullet-time-mod:bullet_time_enter master @p
+/weather clear
+/playsound bullet-time-mod:bullet_time_enter master @p
+/kill @e[type=!minecraft:player]
+/playsound bullet-time-mod:bullet_time_enter master @p
+/playsound bullettimemod:bullet_time_enter master @p
+/playsound bullet-time-mod:bullet_time_enter master @p
+/playsound bullet-time-mod:bullet_time_enter_event master @p
+/playsound bullet-time-mod:bullet_time_enter master @p
+/playsound bullet_time_mod:bullet_time_enter master @p
