@@ -13,6 +13,10 @@ public class BulletTimeMod implements ModInitializer {
     public static final Identifier BULLET_TIME_ENTER = Identifier.of("bullet_time_mod:bullet_time_enter");
     public static SoundEvent BULLET_TIME_ENTER_EVENT = SoundEvent.of(BULLET_TIME_ENTER);
 
+    public static final Identifier BULLET_TIME_LEAVE = Identifier.of("bullet_time_mod:bullet_time_leave");
+    public static SoundEvent BULLET_TIME_LEAVE_EVENT = SoundEvent.of(BULLET_TIME_LEAVE);
+
+
     @Override
     public void onInitialize() {
         Registry.register(Registries.SOUND_EVENT, BULLET_TIME_ENTER, BULLET_TIME_ENTER_EVENT);

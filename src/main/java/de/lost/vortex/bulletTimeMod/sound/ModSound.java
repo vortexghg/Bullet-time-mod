@@ -9,11 +9,10 @@ import net.minecraft.util.Identifier;
 
 
 public class ModSound {
+    public static SoundEvent BULLET_TIME_ENTER_EVENT;
+    public static SoundEvent BULLET_TIME_LEAVE_EVENT;
+
     public static void init(){}
-
-    public static final SoundEvent BULLET_TIME_ENTER = registerSoundEvent("bullet_time_enter");
-    public static final SoundEvent BULLET_TIME_LEAVE = registerSoundEvent("bullet_time_leave");
-
 
 
 

@@ -1,7 +1,11 @@
 {
+
   "bullet_time_enter": {
     "sounds": [
-      "bullet_time_mod:bullet_time_enter"
+      {
+        "name": "bullet_time_mod:bullet_time_enter",
+        "stream": false
+      }
     ]
   },
   "bullet_time_leave": {

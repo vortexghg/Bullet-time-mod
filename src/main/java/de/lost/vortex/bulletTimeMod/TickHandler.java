@@ -1,5 +1,6 @@
 package de.lost.vortex.bulletTimeMod;
 
+import de.lost.vortex.bulletTimeMod.sound.ModSound;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
@@ -21,8 +22,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import static de.lost.vortex.bulletTimeMod.BulletTimeMod.BULLET_TIME_ENTER_EVENT;
-import static de.lost.vortex.bulletTimeMod.sound.ModSound.BULLET_TIME_LEAVE;
 
 
 public class TickHandler {
@@ -62,14 +61,15 @@ public class TickHandler {
                         bulletTimeTicks.put(playerId, 0);
 
                         // Sound: Erster Teil (3s)
-                        player.playSound(BULLET_TIME_ENTER_EVENT, 10.0f, 1.0f);
+                        player.playSound(ModSound.BULLET_TIME_ENTER_EVENT, 10.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
-                                BULLET_TIME_ENTER_EVENT,
+                                ModSound.BULLET_TIME_ENTER_EVENT,
                                 SoundCategory.PLAYERS,
                                 1.0f, 1.0f
                         );
+
 
                     }
                     // Bullet Time läuft
@@ -127,11 +127,11 @@ public class TickHandler {
                         bulletTimeTicks.remove(playerId);
 
                         // Sound: Restlicher Teil (3s)
-                        player.playSound(BULLET_TIME_LEAVE, 10.0f, 1.0f);
+                        player.playSound(ModSound.BULLET_TIME_LEAVE_EVENT, 10.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
-                                BULLET_TIME_LEAVE,
+                                ModSound.BULLET_TIME_LEAVE_EVENT,
                                 SoundCategory.PLAYERS,
                                 1.0f, 1.0f
                         );
