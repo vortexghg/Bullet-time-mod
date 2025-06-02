@@ -26,12 +26,6 @@ import java.util.UUID;
 
 public class TickHandler {
 
-    private static SoundEvent registerSound(String id) {
-        Identifier identifier = Identifier.of(BulletTimeMod.MOD_ID, id);
-        return Registry.register(Registries.SOUND_EVENT, identifier, SoundEvent.of(identifier));
-    }
-
-
 
         // Status pro Spieler speichern
     private static final Map<UUID, Boolean> bulletTimeActive = new HashMap<>();
