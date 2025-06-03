@@ -55,7 +55,7 @@ public class TickHandler {
                         bulletTimeTicks.put(playerId, 0);
 
                         // Sound: Erster Teil (3s)
-                        player.playSound(ModSound.BULLET_TIME_ENTER_EVENT, 10.0f, 1.0f);
+                        world.playSound(ModSound.BULLET_TIME_ENTER_EVENT, 10.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
