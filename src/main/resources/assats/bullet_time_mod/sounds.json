@@ -1,0 +1,14 @@
+{
+  "bullet_time_enter_event": {
+    "category": "player",
+    "sounds": [
+      "bullet_time_enter_event"
+    ],
+    "bullet_time_leave_event": {
+      "category": "player",
+      "sounds": [
+        "bullet_time_leave_enter"
+      ]
+    }
+  }
+}

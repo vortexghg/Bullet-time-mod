@@ -1,4 +1,3 @@
-/effect give Player565 minecraft:saturation infinite 255
 /give Player784 minecraft:arrow
 /tp ~ ~100 ~
 /gamerule keepInventory true
@@ -34,3 +33,18 @@
 /playsound bullet-time-mod:bullet_time_enter_event master @p
 /playsound bullet-time-mod:bullet_time_enter master @p
 /playsound bullet_time_mod:bullet_time_enter master @p
+/time set day
+/playsound bullet_time_mod:bullet_time_enter master @p
+/playsound bullet_time_mod:bullet_time_enter_event master @p
+/playsound bullet_time_mod:bullet_time_enter master @p
+/playsound bullet_time_mod:bullet_time_enter_event master @p
+/playsound bullet_time_mod:bullet_time_enter master @p
+/playsound bullet_time_mod:bullet_time_enter_event master @p
+/playsound bullet_time_mod:bullet_time_enter master @p
+/playsound bullet_time_mod:bullet_time_enter_event master @p
+/playsound bullet_time_mod:bullet_time_enter master @p
+/playsound bullet_time_mod:bullet_time_leave master @p
+/playsound bullet_time_mod:bullet_time_enter master @p
+/playsound bullet_time_mod:bullet_time_leave master @p
+/playsound bullet_time_mod:bullet_time_enter_event master @p
+/playsound bullet_time_mod:bullet_time_leave_event master @p

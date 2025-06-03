@@ -1,27 +1,20 @@
 package de.lost.vortex.bulletTimeMod;
 
-import de.lost.vortex.bulletTimeMod.sound.ModSound;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Items;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.attribute.EntityAttributes;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
-
 
 
 public class TickHandler {
@@ -55,11 +48,11 @@ public class TickHandler {
                         bulletTimeTicks.put(playerId, 0);
 
                         // Sound: Erster Teil (3s)
-                        world.playSound(ModSound.BULLET_TIME_ENTER_EVENT, 10.0f, 1.0f);
+                        player.playSound(BulletTimeMod.BULLET_TIME_ENTER_EVENT, 1.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
-                                ModSound.BULLET_TIME_ENTER_EVENT,
+                                BulletTimeMod.BULLET_TIME_ENTER_EVENT,
                                 SoundCategory.PLAYERS,
                                 1.0f, 1.0f
                         );
@@ -121,11 +114,11 @@ public class TickHandler {
                         bulletTimeTicks.remove(playerId);
 
                         // Sound: Restlicher Teil (3s)
-                        player.playSound(ModSound.BULLET_TIME_LEAVE_EVENT, 10.0f, 1.0f);
+                        player.playSound(BulletTimeMod.BULLET_TIME_LEAVE_EVENT, 1.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
-                                ModSound.BULLET_TIME_LEAVE_EVENT,
+                                BulletTimeMod.BULLET_TIME_LEAVE_EVENT,
                                 SoundCategory.PLAYERS,
                                 1.0f, 1.0f
                         );
