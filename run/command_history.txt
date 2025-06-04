@@ -1,8 +1,3 @@
-/give Player784 minecraft:arrow
-/tp ~ ~100 ~
-/gamerule keepInventory true
-/summon minecraft:arrow ~ ~50 ~
-/effect give Player565 minecraft:saturation infinite 255
 /effect give @s minecraft:saturation infinite 255
 /difficulty peaceful
 /time set day
@@ -48,3 +43,8 @@
 /playsound bullet_time_mod:bullet_time_leave master @p
 /playsound bullet_time_mod:bullet_time_enter_event master @p
 /playsound bullet_time_mod:bullet_time_leave_event master @p
+/playsound bullet_time_mod:bullet_time_leave master @p
+/playsound bullet_time_mod:bullet_time_enter master @p
+/playsound bullet_time_mod:bullet_time_leave_event master @p
+/playsound bullet_time_mod:bullet_time_enter_event master @p
+/playsound bullet_time_mod:bullet_time_enter master @p

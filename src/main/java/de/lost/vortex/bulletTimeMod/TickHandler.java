@@ -16,9 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-
 public class TickHandler {
-
 
         // Status pro Spieler speichern
     private static final Map<UUID, Boolean> bulletTimeActive = new HashMap<>();
@@ -48,7 +46,6 @@ public class TickHandler {
                         bulletTimeTicks.put(playerId, 0);
 
                         // Sound: Erster Teil (3s)
-                        player.playSound(BulletTimeMod.BULLET_TIME_ENTER_EVENT, 1.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
@@ -56,7 +53,6 @@ public class TickHandler {
                                 SoundCategory.PLAYERS,
                                 1.0f, 1.0f
                         );
-
 
                     }
                     // Bullet Time läuft
@@ -114,7 +110,6 @@ public class TickHandler {
                         bulletTimeTicks.remove(playerId);
 
                         // Sound: Restlicher Teil (3s)
-                        player.playSound(BulletTimeMod.BULLET_TIME_LEAVE_EVENT, 1.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
@@ -122,7 +117,6 @@ public class TickHandler {
                                 SoundCategory.PLAYERS,
                                 1.0f, 1.0f
                         );
-
 
                         // Andere Spieler im Radius zurücksetzen
                         for (ServerPlayerEntity other : world.getPlayers()) {
