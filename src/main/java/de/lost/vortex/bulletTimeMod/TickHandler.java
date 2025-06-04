@@ -1,5 +1,6 @@
 package de.lost.vortex.bulletTimeMod;
 
+import de.lost.vortex.bulletTimeMod.sound.ModSound;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
@@ -46,10 +47,11 @@ public class TickHandler {
                         bulletTimeTicks.put(playerId, 0);
 
                         // Sound: Erster Teil (3s)
+                        player.playSound(ModSound.BULLET_TIME_ENTER, 1.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
-                                BulletTimeMod.BULLET_TIME_ENTER_EVENT,
+                                ModSound.BULLET_TIME_ENTER,
                                 SoundCategory.PLAYERS,
                                 1.0f, 1.0f
                         );
@@ -110,10 +112,11 @@ public class TickHandler {
                         bulletTimeTicks.remove(playerId);
 
                         // Sound: Restlicher Teil (3s)
+                        player.playSound(ModSound.BULLET_TIME_LEAVE, 1.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
-                                BulletTimeMod.BULLET_TIME_LEAVE_EVENT,
+                                ModSound.BULLET_TIME_LEAVE,
                                 SoundCategory.PLAYERS,
                                 1.0f, 1.0f
                         );
