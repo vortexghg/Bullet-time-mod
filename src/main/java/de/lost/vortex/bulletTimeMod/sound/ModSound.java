@@ -12,8 +12,8 @@ public class ModSound {
     }
 
     // and is called in the mod to use the custom sound
-    public static final SoundEvent BULLET_TIME_ENTER = registerSound("bullet_time_enter");
-    public static final SoundEvent BULLET_TIME_LEAVE = registerSound("bullet_time_leave");
+    public static final SoundEvent BULLET_TIME_ENTER = registerSound("bullet_time_enterd");
+    public static final SoundEvent BULLET_TIME_LEAVE = registerSound("bullet_time_leaved");
     public static final SoundEvent ENGINE_LOOP = registerSound("engine");
 
     private static SoundEvent registerSound(String id) {
