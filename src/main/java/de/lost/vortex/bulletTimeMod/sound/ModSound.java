@@ -1,6 +1,6 @@
 package de.lost.vortex.bulletTimeMod.sound;
 
-import de.lost.vortex.bulletTimeMod.BulletTimeMod;
+import de.lost.vortex.bulletTimeMod.    BulletTimeMod;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
