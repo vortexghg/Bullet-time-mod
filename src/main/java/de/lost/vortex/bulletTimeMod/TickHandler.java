@@ -47,13 +47,13 @@ public class TickHandler {
                         bulletTimeTicks.put(playerId, 0);
 
                         // Sound: Erster Teil (3s)
-                        player.playSound(ModSound.BULLET_TIME_ENTER, 1.0f, 1.0f);
+                        player.playSound(ModSound.BULLET_TIME_ENTER, 10.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
                                 ModSound.BULLET_TIME_ENTER,
                                 SoundCategory.PLAYERS,
-                                1.0f, 1.0f
+                                10.0f, 1.0f
                         );
 
                     }
@@ -112,13 +112,13 @@ public class TickHandler {
                         bulletTimeTicks.remove(playerId);
 
                         // Sound: Restlicher Teil (3s)
-                        player.playSound(ModSound.BULLET_TIME_LEAVE, 1.0f, 1.0f);
+                        player.playSound(ModSound.BULLET_TIME_LEAVE, 10.0f, 1.0f);
                         world.playSound(
                                 null,
                                 player.getX(), player.getY(), player.getZ(),
                                 ModSound.BULLET_TIME_LEAVE,
                                 SoundCategory.PLAYERS,
-                                1.0f, 1.0f
+                                10.0f, 1.0f
                         );
 
                         // Andere Spieler im Radius zurücksetzen

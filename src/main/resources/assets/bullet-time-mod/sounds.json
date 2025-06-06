@@ -12,7 +12,7 @@
       "subtitle": "sound.bullet-time-mod.bullet_time_leave",
       "category": "player",
       "sounds": [
-        "bullet-time-mod.bullet_time_leave"
+        "bullet-time-mod:bullet_time_leave"
       ]
     }
 }
