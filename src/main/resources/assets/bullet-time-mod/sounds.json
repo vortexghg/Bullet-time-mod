@@ -1,19 +1,19 @@
 {
   "bullet_time_enter": {
-    "subtitle": "sound.bullettimemod.bullet_time_enter",
+    "subtitle": "sound.bullet-time-mod.bullet_time_enter",
     "category": "player",
     "sounds": [
-      "bullettimemod:bullet_time_enter"
+      "bullet-time-mod:bullet_time_enter"
     ]
   },
   "engine": {
     
   },
     "bullet_time_leave": {
-      "subtitle": "sound.bullettimemod.bullet_time_leave",
+      "subtitle": "sound.bullet-time-mod.bullet_time_leave",
       "category": "player",
       "sounds": [
-        "bullettimemod.bullet_time_leave"
+        "bullet-time-mod.bullet_time_leave"
       ]
     }
 }
