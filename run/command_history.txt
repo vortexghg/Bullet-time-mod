@@ -1,5 +1,3 @@
-/difficulty peaceful
-/time set day
 /tp @e[type=minecraft:chicken,distance=10] ~ ~10 ~
 /tp @e[type=minecraft:chicken,distance=20] ~ ~10 ~
 /tp @e[type=minecraft:chicken] ~ ~10 ~
@@ -48,3 +46,5 @@
 /playsound bullet_time_mod:bullet_time_enter_event master @p
 /playsound bullet_time_mod:bullet_time_enter master @p
 /playsound minecraft:entity.player.bullet_time_enter master @p
+/time set night
+/time set day

@@ -22,7 +22,7 @@ mipmapLevels:4
 narrator:0
 particles:0
 reducedDebugInfo:false
-renderClouds:"true"
+renderClouds:"false"
 renderDistance:32
 simulationDistance:12
 screenEffectScale:1.0
@@ -40,7 +40,7 @@ realmsNotifications:true
 showSubtitles:false
 directionalAudio:false
 touchscreen:false
-bobView:true
+bobView:false
 toggleCrouch:false
 toggleSprint:true
 darkMojangStudiosBackground:false
@@ -82,7 +82,7 @@ skipMultiplayerWarning:false
 hideMatchedNames:true
 joinedFirstServer:true
 syncChunkWrites:true
-showAutosaveIndicator:true
+showAutosaveIndicator:false
 allowServerListing:true
 onlyShowSecureChat:false
 panoramaScrollSpeed:1.0
@@ -123,6 +123,10 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
+key_iris.keybind.reload:key.keyboard.unknown
+key_iris.keybind.toggleShaders:key.keyboard.k
+key_iris.keybind.shaderPackSelection:key.keyboard.unknown
+key_iris.keybind.wireframe:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0
