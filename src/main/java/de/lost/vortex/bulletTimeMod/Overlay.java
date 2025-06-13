@@ -1,6 +1,5 @@
 package de.lost.vortex.bulletTimeMod;
 
-
 import net.minecraft.client.gui.screen.Screen;
 
 public class Overlay {
