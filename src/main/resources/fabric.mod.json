@@ -10,7 +10,7 @@
   "environment": "*",
   "entrypoints": {
     "modmenu": [ "de.lost.vortex.bulletTimeMod.BulletTimeModapi"],
-    "simpleconfig": [ "de.lost.vortex.bulletTimeMod.BulletTimeModapi" ],
+    "clothconfig": ["de.lost.vortex.bulletTimeMod.BulletTimeModapi"],
     "fabric-datagen": [
       "de.lost.vortex.bulletTimeMod.client.BulletTimeModDataGenerator"
     ],
