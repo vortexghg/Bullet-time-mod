@@ -9,6 +9,8 @@
   "license": "All-Rights-Reserved",
   "environment": "*",
   "entrypoints": {
+    "modmenu": [ "de.lost.vortex.bulletTimeMod.BulletTimeModapi"],
+    "simpleconfig": [ "de.lost.vortex.bulletTimeMod.BulletTimeModapi" ],
     "fabric-datagen": [
       "de.lost.vortex.bulletTimeMod.client.BulletTimeModDataGenerator"
     ],
@@ -30,5 +32,24 @@
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/jEGF5fb"
+      },
+      "badges": [ "library", "deprecated" ],
+      "parent": {
+        "id": "bullet-time-api",
+        "name": "Bullet Time API",
+        "description": "A library for implementing bullet time mechanics in Minecraft.",
+        "icon": "assets/bullet-time-mod/api.png",
+        "badges": [ "library" ]
+      },
+      "update_checker": true
+    }
   }
+
+
 }

@@ -4,15 +4,16 @@ import de.lost.vortex.bulletTimeMod.sound.ModSound;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import eu.midnightdust.lib.config.MidnightConfig;
 
 
 public class BulletTimeMod implements ModInitializer {
     public static final String MOD_ID = "bullet-time-mod";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-
     @Override
     public void onInitialize() {
+        MidnightConfig.init(MOD_ID, BulletTimeModConfig);
         ModSound.initialize();
         TickHandler.register();
     }
