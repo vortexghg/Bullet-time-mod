@@ -28,11 +28,11 @@ fabricApi {
 }
 
 repositories {
-    // Add repositories to retrieve artifacts from in here.
-    // You should only use this when depending on other mods because
-    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-    // See https://docs.gradle.org/current/userguide/declaring_repositories.html
-    // for more information about repositories.
+    maven {
+        name = "FzzyMaven"
+        url = uri("https://maven.fzzyhmstrs.me/")
+    }
+
 }
 
 dependencies {
@@ -42,15 +42,10 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation "com.terraformersmc:modmenu:13.0.3"
     modImplementation "net.fabricmc.fabric-api:fabric-api:0.119.3+1.21.4"
-    modImplementation "me.shedaniel.cloth:cloth-config-fabric:8.2.88"
-    modApi("me.shedaniel.cloth:cloth-config-fabric:8.2.88") {
-        exclude(group: "net.fabricmc.fabric-api")
-    }
-
+    modImplementation("me.fzzyhmstrs:fzzy_config:0.7.0+1.21.3")
+    modImplementation "me.fzzyhmstrs:fzzy_config:0.7.0+1.21.3"
 }
-
 processResources {
     inputs.property "version", project.version
     inputs.property "minecraft_version", project.minecraft_version
@@ -91,6 +86,9 @@ jar {
     from("LICENSE") {
         rename { "${it}_${project.archivesBaseName}" }
     }
+    tasks.withType(Jar).configureEach {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
 }
 
 // configure the maven publication
@@ -105,16 +103,17 @@ publishing {
     // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
     repositories {
         maven {
-            name = "Terraformers"
-            url = "https://maven.terraformersmc.com/"
-        }
+        name = "FzzyMaven"
+        url = uri("https://maven.fzzyhmstrs.me/")
+    }
+
+//version 0.4.2 or lower:
         maven {
-            name "clothConfig"
-            url "https://maven.shedaniel.me/"
-        }
-        maven {
-            name "clothConfigBeta"
-            url "https://maven.terraformersmc.com/releases/"
+            name = "Modrinth"
+            url = uri("https://api.modrinth.com/maven")
+            content {
+                includeGroup("maven.modrinth")
+            }
         }
     }
 }

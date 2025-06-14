@@ -12,7 +12,6 @@ public class BulletTimeMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        BulletTimeModConfig.createConfigScreen();
         ModSound.initialize();
         TickHandler.register();
     }

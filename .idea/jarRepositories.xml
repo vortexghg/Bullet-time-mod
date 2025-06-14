@@ -46,5 +46,10 @@
       <option name="name" value="LoomGlobalMinecraft" />
       <option name="url" value="file:/C:/Gradle/gradle-8.14/caches/fabric-loom/minecraftMaven/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="FzzyMaven" />
+      <option name="name" value="FzzyMaven" />
+      <option name="url" value="https://maven.fzzyhmstrs.me/" />
+    </remote-repository>
   </component>
 </project>
