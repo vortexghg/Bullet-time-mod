@@ -1,0 +1,18 @@
+{
+  "bullet_time_enter": {
+    "subtitle": "sound.bullet-time-mod.bullet_time_enter",
+    "category": "player",
+    "sounds": [
+      "bullet-time-mod:bullet_time_enter"
+    ]
+  },
+  "engine": {
+  },
+    "bullet_time_leave": {
+      "subtitle": "sound.bullet-time-mod.bullet_time_leave",
+      "category": "player",
+      "sounds": [
+        "bullet-time-mod:bullet_time_leave"
+      ]
+    }
+}

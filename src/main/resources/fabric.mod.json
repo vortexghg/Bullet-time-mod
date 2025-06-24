@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "bullet-time-mod",
+  "icon": "assets/bullet-time-mod/api.png",
+  "version": "${version}",
+  "name": "Bullet-time-mod",
+  "description": "test",
+  "authors": ["LostVortex"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "modmenu": ["de.lost.vortex.bulletTimeMod.client.ModMenuInit"],
+      "fabric-datagen": [
+      "de.lost.vortex.bulletTimeMod.client.BulletTimeModDataGenerator"
+    ],
+    "client": [
+      "de.lost.vortex.bulletTimeMod.client.BulletTimeModClient"
+    ],
+    "main": [
+      "de.lost.vortex.bulletTimeMod.BulletTimeMod"
+    ]
+  },
+  "mixins": [
+    "bullet-time-mod.mixins.json",
+    {
+      "config": "bullet-time-mod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "modmenu": "*"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/jEGF5fb"
+      }
+    }
+  }
+}
