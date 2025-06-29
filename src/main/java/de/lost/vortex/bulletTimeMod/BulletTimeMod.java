@@ -16,7 +16,6 @@ public class BulletTimeMod implements ModInitializer {
     public void onInitialize() {
         ModItemGroup.registerItemGroups();
         TickHandler.registerTickHandler();
-        Overlay.registerOverlay();
         ModItems.registerItems();
         ModSound.initialize();
         TickHandler.register();
