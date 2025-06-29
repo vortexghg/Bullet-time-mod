@@ -9,5 +9,5 @@ public class BulletTimeModClient implements ClientModInitializer {
     public void onInitializeClient() {
         ModSound.initialize();
         Overlay.registerOverlay();
-    }
+}
 }

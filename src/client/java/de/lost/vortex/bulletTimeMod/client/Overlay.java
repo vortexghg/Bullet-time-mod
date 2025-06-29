@@ -1,50 +1,42 @@
 package de.lost.vortex.bulletTimeMod.client;
 
 import de.lost.vortex.bulletTimeMod.BulletTimeMod;
+import de.lost.vortex.bulletTimeMod.BulletTimeModConfig;
+import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.render.RenderTickCounter;
 
 public class Overlay {
-
-    public static void registerOverlay() {
-        BulletTimeMod.LOGGER.info("Registering Overlay");
-    }
-
     private static float currentStamina = BulletTimeModConfig.startStamina;
 
     public static void registerOverlay() {
-        // Registriere das HUD Rendering
         HudRenderCallback.EVENT.register(Overlay::onHudRender);
-
-        // Stamina regeneration (Client Tick)
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (client.player != null) {
-                currentStamina += BulletTimeModConfig.regenRate;
-                if (currentStamina > BulletTimeModConfig.maxStamina)
-                    currentStamina = BulletTimeModConfig.maxStamina;
-            }
-        });
+        BulletTimeMod.LOGGER.info("Registering Overlay");
     }
 
     public static void setCurrentStamina(float value) {
         currentStamina = Math.max(0, Math.min(value, BulletTimeModConfig.maxStamina));
     }
 
-    private static void onHudRender(DrawContext drawContext, float tickDelta) {
+    private static void onHudRender(DrawContext ctx, RenderTickCounter tickCounter) {
         MinecraftClient client = MinecraftClient.getInstance();
         if (client.player == null) return;
 
+        // Optional: float tickDelta = tickCounter.tickDelta();
+
+        currentStamina += BulletTimeModConfig.regenRate;
+        if (currentStamina > BulletTimeModConfig.maxStamina) currentStamina = BulletTimeModConfig.maxStamina;
+
         int centerX = client.getWindow().getScaledWidth() / 2;
         int y = client.getWindow().getScaledHeight() - 40;
-
         float staminaPercent = currentStamina / BulletTimeModConfig.maxStamina;
         int radius = BulletTimeModConfig.wheelRadius;
         int thickness = BulletTimeModConfig.wheelThickness;
         int color = parseColor(BulletTimeModConfig.staminaColor);
 
-        // Hintergrundkreis (grau)
-        drawCircle(drawContext, centerX, y, radius, thickness, 0x80000040, 1f);
-
-        // Vordergrund (Stamina, farbig)
-        drawCircle(drawContext, centerX, y, radius, thickness, color, staminaPercent);
+        drawCircle(ctx, centerX, y, radius, thickness, 0x80000040, 1f);
+        drawCircle(ctx, centerX, y, radius, thickness, color, staminaPercent);
     }
 
     private static void drawCircle(DrawContext ctx, int cx, int cy, int radius, int thickness, int color, float fill) {
@@ -67,14 +59,13 @@ public class Overlay {
         }
     }
 
-    // Hilfsmethode: Hex-Farbe zu ARGB int
     private static int parseColor(String hex) {
         try {
             if (hex.startsWith("#")) hex = hex.substring(1);
             if (hex.length() == 6) hex = "FF" + hex;
             return (int)Long.parseLong(hex, 16);
         } catch (Exception e) {
-            return 0xFF00FF00;
+            return 0xFF00FF00; // fallback: grün
         }
     }
 }
