@@ -19,6 +19,9 @@ import java.util.UUID;
 
 public class TickHandler {
 
+    public static void registerTickHandler() {
+        BulletTimeMod.LOGGER.info("Registering Tickhandler");
+    }
         // Status pro Spieler speichern
     private static final Map<UUID, Boolean> bulletTimeActive = new HashMap<>();
     private static final Map<UUID, Integer> bulletTimeTicks = new HashMap<>();

@@ -1,5 +1,7 @@
 package de.lost.vortex.bulletTimeMod;
 
+import de.lost.vortex.bulletTimeMod.item.ModItemGroup;
+import de.lost.vortex.bulletTimeMod.item.ModItems;
 import de.lost.vortex.bulletTimeMod.sound.ModSound;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -12,6 +14,10 @@ public class BulletTimeMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModItemGroup.registerItemGroups();
+        TickHandler.registerTickHandler();
+        Overlay.registerOverlay();
+        ModItems.registerItems();
         ModSound.initialize();
         TickHandler.register();
     }
