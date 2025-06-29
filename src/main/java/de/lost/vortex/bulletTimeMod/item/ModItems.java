@@ -16,11 +16,11 @@ public class ModItems {
         BulletTimeMod.LOGGER.info("Registering Mod Items");
     }
 
-    public static final Item PARAGLIDER = registerItem("paraglider", Item::new);
+    public static final Item PARAGLIDER = registerItem(Item::new);
 
 
-    private static Item registerItem(String name, Function<Item.Settings, Item> function) {
-        return Registry.register(Registries.ITEM, Identifier.of(BulletTimeMod.MOD_ID, name),
-                function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BulletTimeMod.MOD_ID, name)))));
+    private static Item registerItem(Function<Item.Settings, Item> function) {
+        return Registry.register(Registries.ITEM, Identifier.of(BulletTimeMod.MOD_ID, "paraglider"),
+                function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BulletTimeMod.MOD_ID, "paraglider")))));
     }
 }

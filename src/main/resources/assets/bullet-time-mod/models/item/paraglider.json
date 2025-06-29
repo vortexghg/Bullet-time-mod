@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "paraglider",
-		"particle": "paraglider"
+		"0": "bullet-time-mod:item/paraglider",
+		"particle": "bullet-time-mod:item/paraglider"
 	},
 	"elements": [
 		{
@@ -273,13 +273,13 @@
 			"scale": [0.7, 0.7, 0.7]
 		},
 		"firstperson_righthand": {
-			"rotation": [0, -44.5, 0],
-			"translation": [0, 5.25, 2.75],
+			"rotation": [34.04, -37.43, 20.95],
+			"translation": [0.75, 4.75, 2.75],
 			"scale": [0.7, 0.7, 0.7]
 		},
 		"firstperson_lefthand": {
-			"rotation": [180, 63.5, -180],
-			"translation": [0, 5.25, 3.25],
+			"rotation": [-137.82, 51.91, 149.63],
+			"translation": [0.5, 4.5, 3.75],
 			"scale": [0.7, 0.7, 0.7]
 		},
 		"ground": {
@@ -290,7 +290,7 @@
 			"translation": [1.75, 0.75, 0]
 		},
 		"head": {
-			"rotation": [180, -87, 180],
+			"rotation": [-180, -87, -180],
 			"translation": [0, 9.75, 0],
 			"scale": [2.5, 2.5, 2.5]
 		},
