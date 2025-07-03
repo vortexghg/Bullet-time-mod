@@ -65,12 +65,19 @@ public class TickHandler {
                         int ticks = bulletTimeTicks.getOrDefault(playerId, 0) + 1;
                         bulletTimeTicks.put(playerId, ticks);
 
-                        // Spieler langsamer fallen lassen
+                        //fall wird gemacht
                         Vec3d velocity = player.getVelocity();
-                        Vec3d newVelocity = new Vec3d(velocity.x, velocity.y * 0.2, velocity.z);
+                        double pixelFallSpeed = -0.0625;
+                        double newY = velocity.y;
+                        if (velocity.y < pixelFallSpeed) {
+                            newY = pixelFallSpeed;
+                        } else if (velocity.y > pixelFallSpeed) {
+
+                        }
+
+                        Vec3d newVelocity = new Vec3d(velocity.x, newY, velocity.z);
                         player.setVelocity(newVelocity);
                         player.velocityModified = true;
-
                         // Andere Spieler im Radius verlangsamen
                         for (ServerPlayerEntity other : world.getPlayers()) {
                             if (other == player) continue;
@@ -78,8 +85,8 @@ public class TickHandler {
 
                             EntityAttributeInstance speedAttr = other.getAttributeInstance(EntityAttributes.MOVEMENT_SPEED);
                             if (speedAttr != null) {
-                                double baseSpeed = 0.1;
-                                double slowedSpeed = baseSpeed * 0.75;
+                                double baseSpeed = 0.01;
+                                double slowedSpeed = baseSpeed * 0.50;
                                 if (Math.abs(speedAttr.getBaseValue() - slowedSpeed) > 0.001) {
                                     speedAttr.setBaseValue(slowedSpeed);
                                 }

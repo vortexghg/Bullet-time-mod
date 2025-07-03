@@ -1,3 +1,25 @@
 {
-  "item.bullet-time-mod.paraglider": "Paraglider"
+  "modmenu.bullet-time-mod": "Bullet Time Mod",
+  "bullet-time-mod.midnightconfig.title": "Bullet Time Mod Settings",
+  "bullet-time-mod.midnightconfig.stamina_wheel": "Stamina Wheel",
+  "bullet-time-mod.midnightconfig.maxStamina": "Max Stamina",
+  "bullet-time-mod.midnightconfig.maxStamina.tooltip": "The maximum value of stamina.",
+  "bullet-time-mod.midnightconfig.startStamina": "Starting Stamina",
+  "bullet-time-mod.midnightconfig.startStamina.tooltip": "The stamina value you start with.",
+  "bullet-time-mod.midnightconfig.regenRate": "Stamina Regen Rate",
+  "bullet-time-mod.midnightconfig.regenRate.tooltip": "How quickly stamina regenerates per tick.",
+  "bullet-time-mod.midnightconfig.staminaColor": "Stamina Color",
+  "bullet-time-mod.midnightconfig.staminaColor.tooltip": "The color of the stamina wheel.",
+  "bullet-time-mod.midnightconfig.wheelRadius": "Stamina Wheel Size",
+  "bullet-time-mod.midnightconfig.wheelRadius.tooltip": "The diameter of the stamina wheel.",
+  "bullet-time-mod.midnightconfig.wheelThickness": "Stamina Wheel Thickness",
+  "bullet-time-mod.config.wheelThickness.tooltip": "The thickness of the stamina wheel.",
+  "itemgroup.BulletTimeMod.paraglider": "Bullet Mod",
+  "item.bullet-time-mod.paraglider": "Paraglider",
+  "bullet-time-mod.stamina": "Stamina",
+  "bullet-time-mod.stamina.tooltip": "Shows your current stamina.",
+  "bullet-time-mod.hotbar.stamina": "Stamina: %s/%s",
+  "bullet-time-mod.overlay.stamina": "Stamina",
+  "bullet-time-mod.overlay.stamina.tooltip": "Current stamina value.",
+  "bullet-time-mod.category.stamina_wheel": "Stamina Wheel"
 }

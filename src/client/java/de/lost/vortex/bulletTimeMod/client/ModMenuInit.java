@@ -9,6 +9,7 @@ import net.fabricmc.api.Environment;
 public class ModMenuInit implements ModMenuApi {
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        return parent -> null;
+        // MidnightConfig integration
+        return parent -> eu.midnightdust.lib.config.MidnightConfig.getScreen(parent, "bullet-time-mod");
     }
 }
