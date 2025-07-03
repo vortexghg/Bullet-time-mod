@@ -3,6 +3,7 @@ package de.lost.vortex.bulletTimeMod;
 import de.lost.vortex.bulletTimeMod.item.ModItemGroup;
 import de.lost.vortex.bulletTimeMod.item.ModItems;
 import de.lost.vortex.bulletTimeMod.sound.ModSound;
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,5 +20,6 @@ public class BulletTimeMod implements ModInitializer {
         ModItems.registerItems();
         ModSound.initialize();
         TickHandler.register();
+        MidnightConfig.init("bullet-time-mod", BulletTimeModConfig.class);
     }
 }

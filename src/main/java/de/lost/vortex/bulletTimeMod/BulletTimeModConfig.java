@@ -3,6 +3,8 @@ package de.lost.vortex.bulletTimeMod;
 import eu.midnightdust.lib.config.MidnightConfig;
 
 public class BulletTimeModConfig extends MidnightConfig {
+    @Entry(category = "Stamina Wheel", isSlider = true, min = 8, max = 32)
+    public static int wheelRadius = 16;
 
     @Entry(category = "Stamina Wheel", isSlider = true, min = 10, max = 500)
     public static int maxStamina = 100;
@@ -15,11 +17,4 @@ public class BulletTimeModConfig extends MidnightConfig {
 
     @Entry(category = "Stamina Wheel", isColor = true)
     public static String staminaColor = "#00FF00";
-
-    @Entry(category = "Stamina Wheel", isSlider = true, min = 10, max = 100)
-    public static int wheelRadius = 30;
-
-    @Entry(category = "Stamina Wheel", isSlider = true, min = 2, max = 20)
-    public static int wheelThickness = 8;
-
 }
