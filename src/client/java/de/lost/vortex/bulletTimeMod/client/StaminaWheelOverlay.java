@@ -5,6 +5,9 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.util.Identifier;
+import net.minecraft.client.render.RenderLayer;
+
+import java.util.function.Function;
 
 public class StaminaWheelOverlay {
     private static final Identifier WHEEL_TEXTURE = Identifier.of("bullet-time-mod", "textures/gui/stamina_wheel.png");
@@ -24,7 +27,6 @@ public class StaminaWheelOverlay {
         int x = client.getWindow().getScaledWidth() - diameter - 10;
         int y = client.getWindow().getScaledHeight() - diameter - 48;
 
-        // Hier ist der KORREKTE drawTexture-Aufruf!
-        ctx.drawTexture(WHEEL_TEXTURE, x, y, 0.0F, 0.0F, 768, 768, 768, 768, 768, 768);
+        ctx.drawTexture((Function<Identifier, RenderLayer>) RenderLayer.getGui(), WHEEL_TEXTURE, x, y, 0.0F, 0.0F, diameter, diameter, diameter, diameter, 768, 768);
     }
 }
