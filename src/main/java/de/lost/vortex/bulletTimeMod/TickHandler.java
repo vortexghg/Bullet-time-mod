@@ -72,12 +72,11 @@ public class TickHandler {
                         if (velocity.y < pixelFallSpeed) {
                             newY = pixelFallSpeed;
                         } else if (velocity.y > pixelFallSpeed) {
-
                         }
-
                         Vec3d newVelocity = new Vec3d(velocity.x, newY, velocity.z);
                         player.setVelocity(newVelocity);
                         player.velocityModified = true;
+
                         // Andere Spieler im Radius verlangsamen
                         for (ServerPlayerEntity other : world.getPlayers()) {
                             if (other == player) continue;
