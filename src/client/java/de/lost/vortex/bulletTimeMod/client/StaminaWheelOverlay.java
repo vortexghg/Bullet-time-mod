@@ -3,12 +3,13 @@ package de.lost.vortex.bulletTimeMod.client;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.util.Identifier;
 import com.mojang.blaze3d.systems.RenderSystem;
 import org.lwjgl.opengl.GL11;
 
 public class StaminaWheelOverlay {
-    private static final Identifier WHEEL_TEXTURE = new Identifier("bullet-time-mod:textures/gui/stamina_wheel.png");
+    private static final Identifier WHEEL_TEXTURE = Identifier.of("White_circle", "bullet-time-mod:textures/gui/stamina_wheel.png");
 
     private static float stamina = 0.67f;
     private static float colorR = 0.31f, colorG = 0.87f, colorB = 0.38f, colorA = 1.0f;
@@ -21,10 +22,14 @@ public class StaminaWheelOverlay {
     }
 
     public static void register() {
+        //noinspection deprecation
         HudRenderCallback.EVENT.register(StaminaWheelOverlay::onHudRender);
     }
 
-    private static void onHudRender(DrawContext ctx, float tickDelta) {
+    private static void onHudRender(DrawContext drawContext, RenderTickCounter renderTickCounter) {
+    }
+
+    private static void onHudRender(DrawContext ctx) {
         MinecraftClient client = MinecraftClient.getInstance();
         if (client.player == null || client.options.hudHidden) return;
 
