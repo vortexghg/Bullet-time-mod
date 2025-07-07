@@ -3,10 +3,13 @@ package de.lost.vortex.bulletTimeMod.client;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.util.Identifier;
 import com.mojang.blaze3d.systems.RenderSystem;
 import org.lwjgl.opengl.GL11;
+
+import java.util.function.Function;
 
 public class StaminaWheelOverlay {
     private static final Identifier WHEEL_TEXTURE = Identifier.of("White_circle", "bullet-time-mod:textures/gui/stamina_wheel.png");
@@ -29,7 +32,7 @@ public class StaminaWheelOverlay {
     private static void onHudRender(DrawContext drawContext, RenderTickCounter renderTickCounter) {
     }
 
-    private static void onHudRender(DrawContext ctx) {
+    private static void onHudRender(DrawContext ctx, DrawContext context, Function<Identifier, RenderLayer> texture) {
         MinecraftClient client = MinecraftClient.getInstance();
         if (client.player == null || client.options.hudHidden) return;
 
@@ -41,11 +44,11 @@ public class StaminaWheelOverlay {
         int cy = y + diameter / 2;
 
         ctx.drawTexture(
-            WHEEL_TEXTURE,
-            x, y,
-            0, 0,
-            diameter, diameter,
-            texSize, texSize
+                RenderLayer::getGui,WHEEL_TEXTURE,
+                x, y,
+                0f, 0f,
+                diameter, diameter,
+                texSize, texSize
         );
 
         drawStaminaArc(cx, cy, diameter/2, diameter/2 - 10, stamina, colorR, colorG, colorB, colorA);
