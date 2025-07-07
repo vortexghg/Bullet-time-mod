@@ -12,7 +12,7 @@ import org.lwjgl.opengl.GL11;
 import java.util.function.Function;
 
 public class StaminaWheelOverlay {
-    private static final Identifier WHEEL_TEXTURE = Identifier.of("White_circle", "bullet-time-mod:textures/gui/stamina_wheel.png");
+    private static final Identifier WHEEL_TEXTURE = Identifier.of("bullet_time_mod", "textures/gui/stamina_wheel.png");
 
     private static float stamina = 0.67f;
     private static float colorR = 0.31f, colorG = 0.87f, colorB = 0.38f, colorA = 1.0f;
@@ -44,7 +44,7 @@ public class StaminaWheelOverlay {
         int cy = y + diameter / 2;
 
         ctx.drawTexture(
-                RenderLayer::getGui,WHEEL_TEXTURE,
+                (Function<Identifier, RenderLayer>) RenderLayer.getGui(),WHEEL_TEXTURE,
                 x, y,
                 0f, 0f,
                 diameter, diameter,

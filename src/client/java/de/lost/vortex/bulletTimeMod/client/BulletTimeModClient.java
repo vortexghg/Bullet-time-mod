@@ -8,7 +8,8 @@ public class BulletTimeModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ModSound.initialize();
-        Overlay.registerOverlay();
+        //Overlay.registerOverlay();
         StaminaWheelOverlay.register();
+
 }
 }
