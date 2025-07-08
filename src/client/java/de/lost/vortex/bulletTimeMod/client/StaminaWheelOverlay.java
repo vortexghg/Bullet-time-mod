@@ -29,29 +29,23 @@ public class StaminaWheelOverlay {
         HudRenderCallback.EVENT.register(StaminaWheelOverlay::onHudRender);
     }
 
-    private static void onHudRender(DrawContext drawContext, RenderTickCounter renderTickCounter) {
-    }
-
-    private static void onHudRender(DrawContext ctx, DrawContext context, Function<Identifier, RenderLayer> texture) {
+    private static void onHudRender(DrawContext ctx, RenderTickCounter tickCounter) {
         MinecraftClient client = MinecraftClient.getInstance();
-
+        if (client.player == null || client.options.hudHidden) return;
 
         int diameter = 96;
-        int texSize = 768;
         int x = client.getWindow().getScaledWidth() - diameter - 10;
         int y = client.getWindow().getScaledHeight() - diameter - 48;
-        int cx = x + diameter / 2;
-        int cy = y + diameter / 2;
 
         ctx.drawTexture(
-                (Function<Identifier, RenderLayer>) RenderLayer.getGui(),WHEEL_TEXTURE,
-                x, y,
-                0f, 0f,
-                diameter, diameter,
-                texSize, texSize
+                WHEEL_TEXTURE,  // deine Texture
+                x, y,           // Ziel-Position am Bildschirm
+                0, 0,           // Startpunkt in der Textur (0, 0 = ganzes Bild)
+                diameter, diameter // Wie groß gezeichnet wird
         );
 
-        drawStaminaArc(cx, cy, diameter/2, diameter/2 - 10, stamina, colorR, colorG, colorB, colorA);
+
+        drawStaminaArc(x, y, diameter/2, diameter/2 - 10, stamina, colorR, colorG, colorB, colorA);
     }
 
     private static void drawStaminaArc(int cx, int cy, int outerR, int innerR, float percent, float r, float g, float b, float a) {
