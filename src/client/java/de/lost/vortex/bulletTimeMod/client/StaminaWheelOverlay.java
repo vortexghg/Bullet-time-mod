@@ -34,7 +34,7 @@ public class StaminaWheelOverlay {
 
     private static void onHudRender(DrawContext ctx, DrawContext context, Function<Identifier, RenderLayer> texture) {
         MinecraftClient client = MinecraftClient.getInstance();
-        if (client.player == null || client.options.hudHidden) return;
+
 
         int diameter = 96;
         int texSize = 768;
